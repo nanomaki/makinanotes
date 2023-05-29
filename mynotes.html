@@ -7,21 +7,17 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
     <div class="background-image ">
         <!--Navbar-->
         <div class="">
-            <nav class="navbar navbar-expand-md navbar-light m-3">
                 <div class="container-fluid">
-                    <img src="./img/logo.png" alt="logo.png">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,10 +25,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav" style="display: flex; justify-content: flex-end;">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html"><i class="bi bi-exclamation-circle"></i>  About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./mynotes.html"><i class="bi bi-pencil-square"></i> Notes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"></a>
@@ -43,21 +37,14 @@
             </nav>
         </div>
         <!--Navbar-->
-        
-
         <!--Modal New Note-->
         <div class="container-md-12  m-3 ">
-
-          
-            
           <div class="row">
             <div class="col-6 d-flex justify-content-end">
-              <button id="AddNote" class="bg-warning"><i class="bi bi-plus-circle"></i>  Add Note</button> 
+              <button id="AddNote" class="bg-warning btn-lg"><i class="bi bi-plus-circle"></i> Add Messge</button>
             </div>
      
             <div class="col d-flex justify-content-end">
-              <input type="text" name="search" placeholder="Search...">
-              <button type="submit"><i class="bi bi-search"></i></button>
             </div>
           </div>
             
@@ -75,8 +62,8 @@
                     <span class="close">&times;</span>
                     <div class="d-flex justify-content-center">
                       <form class="newnote" method="post" id="formnote">
-                        <input type="text" name="title" id="title" placeholder="Title"  class="mb-3"><br>
-                        <textarea name="note" id="note" placeholder="Note..." required rows="6" cols="50" class="mb-3"></textarea><br>
+                        <input type="text" name="title" id="title" placeholder="Title..."  class="mb-3"><br>
+                        <textarea name="note" id="note" placeholder="Put Your message..." required rows="6" cols="50" class="mb-3"></textarea><br>
                         <input type="color" id="colorPicker" list="lightColors" value="#FFA07A">
                         <datalist id="lightColors">
                           <option value="#87CEEB">Light Blue</option>
@@ -87,11 +74,9 @@
                           <option value="#FFB6C1">Light Pink</option>
                           <option value="#E6E6FA">Lavender</option>
                         </datalist> <br><br>
-
                         <button type="submit" id="addnotebtn" name="submit" onclick="add">Add Note</button><br>
                         <br><p class="text-center"><i>Note: Refresh the page after adding note!</i></p>  
                       </form>
-                    
                     </div>
                 </div>
                 </div>
@@ -110,7 +95,7 @@
 
 
 body {
-  background-color: #D9D9D9;
+  background-image: linear-gradient(to bottom, purple , white ,pink );
   /*font-family: Serif, serif;*/
 }
 
@@ -119,7 +104,6 @@ body {
         background-image: url('./img/bg.png');
         background-size: cover;
         background-repeat: no-repeat;
-       
         height: 100vh;
     }
 
@@ -165,7 +149,7 @@ ul .navbar-nav {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #fffbfb;
   width: 50%;
 }
 form .newnote{
@@ -195,7 +179,7 @@ form .newnote{
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 
 .card {
@@ -519,7 +503,4 @@ document.getElementById('formnote').addEventListener('submit', function(e) {
   });
 
 </script>
-
-
-
 </html>

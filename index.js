@@ -1,5 +1,5 @@
  // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+ import { initializeApp } from "https://kain-lang-ako-haha-xd-default-rtdb.asia-southeast1.firebasedatabase.app";
  import { getDatabase, ref, set, get, child } 
  from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
  // TODO: Add SDKs for Firebase products that you want to use
@@ -8,8 +8,8 @@
  // Your web app's Firebase configuration
  const firebaseConfig = {
    apiKey: "AIzaSyCtMEdX5OotGlmuC9B0QO1jMqj0T0chCmY",
-   authDomain: "my-app-79d61.firebaseapp.com",
-   databaseURL: "https://my-app-79d61-default-rtdb.firebaseio.com",
+   authDomain: "https://kain-lang-ako-haha-xd-default-rtdb.asia-southeast1.firebasedatabase.app",
+   databaseURL: "https://kain-lang-ako-haha-xd-default-rtdb.asia-southeast1.firebasedatabase.app",
    projectId: "my-app-79d61",
    storageBucket: "my-app-79d61.appspot.com",
    messagingSenderId: "1006411927866",
